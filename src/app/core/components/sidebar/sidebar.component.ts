@@ -1,4 +1,5 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
+import {CdkDragDrop} from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-sidebar',
@@ -11,6 +12,10 @@ export class SidebarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  order($event: CdkDragDrop<any>): void {
+    console.log($event);
   }
 
 }

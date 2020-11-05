@@ -1,11 +1,6 @@
 <h2 mat-dialog-title>Settings</h2>
 <mat-dialog-content class="mat-typography">
-  <mat-card>
-    <mat-card-header >
-      <mat-card-title>Document</mat-card-title>
-      <mat-card-subtitle>size & type options</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
+  <h3>Page</h3>
       <mat-radio-group
         (change)="selectPageType($event)"
         [value]="selectedPageTypeId$ | async"
@@ -16,8 +11,6 @@
           [checked]="pageType.id === (selectedPageTypeId$ | async)"
         >{{ pageType.title }}<br /><small>{{ pageType.description }}</small></mat-radio-button>
       </mat-radio-group>
-    </mat-card-content>
-  </mat-card>
 </mat-dialog-content>
 <mat-dialog-actions align="end">
   <button mat-button mat-dialog-close>Back</button>

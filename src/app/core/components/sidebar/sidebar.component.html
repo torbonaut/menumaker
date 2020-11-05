@@ -1,2 +1,25 @@
-yolo
-
+<mat-tab-group dynamicHeight>
+  <mat-tab label="categories & items">
+    <mat-list cdkDropList (cdkDropListDropped)="order($event)">
+      <mat-list-item cdkDrag>
+        <mat-icon cdkDragHandle>reorder</mat-icon>Yolo
+        <div class="custom-placeholder" *cdkDragPlaceholder></div>
+      </mat-list-item>
+      <mat-list-item cdkDrag>
+        <mat-icon cdkDragHandle>reorder</mat-icon>Borlo
+        <div class="custom-placeholder" *cdkDragPlaceholder></div>
+      </mat-list-item>
+      <mat-list-item cdkDrag>
+        <mat-icon cdkDragHandle>reorder</mat-icon>Korlo
+        <div class="custom-placeholder" *cdkDragPlaceholder></div>
+      </mat-list-item>
+      <mat-list-item cdkDrag>
+        <mat-icon cdkDragHandle>reorder</mat-icon>Orlo
+        <div class="custom-placeholder" *cdkDragPlaceholder></div>
+      </mat-list-item>
+    </mat-list>
+  </mat-tab>
+  <mat-tab label="images">
+    Some Other content
+  </mat-tab>
+</mat-tab-group>

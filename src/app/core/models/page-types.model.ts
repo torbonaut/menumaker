@@ -31,7 +31,7 @@ export const PAGE_TYPES: Page[] = [
     bleed: 3,
     padding: 5,
     title: 'A4',
-    description: 'unfolded A4',
+    description: 'unfolded A4, 3mm bleed, 5mm padding',
     image: ''
   },
   {
@@ -41,7 +41,7 @@ export const PAGE_TYPES: Page[] = [
     bleed: 3,
     padding: 5,
     title: 'A4 to A5',
-    description: 'A4 folded to A5',
+    description: 'A4 folded to A5, 3mm bleed, 5mm padding',
     image: ''
   },
   {
@@ -51,7 +51,7 @@ export const PAGE_TYPES: Page[] = [
     bleed: 3,
     padding: 5,
     title: 'A4 to DINLang zigzag',
-    description: 'A4 to DINLang with zigzag fold',
+    description: 'A4 to DINLang with zigzag fold, 3mm bleed, 5mm padding',
     image: ''
   }
 ];

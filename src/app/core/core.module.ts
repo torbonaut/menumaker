@@ -10,6 +10,9 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { AboutDialogComponent } from './components/about-dialog/about-dialog.component';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatCardModule} from '@angular/material/card';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatListModule} from '@angular/material/list';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 @NgModule({
     declarations: [SidebarComponent, ToolbarComponent, SettingsDialogComponent, AboutDialogComponent],
@@ -24,7 +27,10 @@ import {MatCardModule} from '@angular/material/card';
       MatButtonModule,
       MatDialogModule,
       MatRadioModule,
-      MatCardModule
+      MatCardModule,
+      MatTabsModule,
+      MatListModule,
+      DragDropModule
     ]
 })
 export class CoreModule { }
