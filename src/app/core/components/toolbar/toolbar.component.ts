@@ -2,6 +2,7 @@ import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 import {SettingsDialogComponent} from '../settings-dialog/settings-dialog.component';
 import {AboutDialogComponent} from '../about-dialog/about-dialog.component';
+import {ScrollStrategyOptions} from "@angular/cdk/overlay";
 
 @Component({
   selector: 'app-toolbar',
@@ -21,7 +22,7 @@ export class ToolbarComponent implements OnInit {
   openSettingsDialog(): void {
     const dialogRef: MatDialogRef<SettingsDialogComponent> = this.matDialog.open(SettingsDialogComponent, {
       width: '400px',
-      maxHeight: '80vh',
+      maxHeight: '80vh'
     });
   }
 
